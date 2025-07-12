@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS livros (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  titulo TEXT NOT NULL,
+  autor TEXT NOT NULL,
+  preco REAL NOT NULL,
+  data_publicacao TEXT NOT NULL,
+  editora TEXT
+);
