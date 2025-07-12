@@ -1,16 +1,38 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "API Backend para gerenciamento de livros - Case Técnico Rubix",
+  "main": "server.js",
   "scripts": {
+    "dev": "tsx src/server.ts",
+    "dev:api": "tsx src/http.ts",
+    "build": "tsc",
+     "start": "node dist/http.js",
+    "console": "node console.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "fastify",
+    "sqlite",
+    "crud",
+    "api",
+    "livros"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "better-sqlite3": "^12.2.0",
     "fastify": "^5.4.0",
     "sqlite3": "^5.1.7"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^24.0.13",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
   }
 }
