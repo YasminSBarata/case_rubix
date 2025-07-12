@@ -13,5 +13,5 @@ fastify.listen({ port: 3001 }, (err) => {
     fastify.log.error(err);
     process.exit(1);
   }
-  console.log('🚀 Servidor rodando em http://localhost:3001');
+  console.log(' Servidor rodando em http://localhost:3001');
 });
