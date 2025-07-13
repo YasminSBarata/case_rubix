@@ -13,7 +13,7 @@ const app = Fastify();
 
 // Libera acesso do frontend
 app.register(cors, {
-  origin: "*",
+  origin: "http://localhost:3000",
 });
 
 // Rota de teste
