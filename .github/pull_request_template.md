@@ -27,3 +27,4 @@ _Coloque um `x` na caixa que você aplicará_
 ## Comentários adicionais
 
 Se esta for uma mudança relativamente grande ou complexa, inicie a discussão explicando por que você escolheu a solução que você fez e quais alternativas você considerou, etc...
+
