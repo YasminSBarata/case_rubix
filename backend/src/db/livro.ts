@@ -10,27 +10,10 @@ export interface Livro {
 }
 
 // Listar todos os livros
-export function listarLivros(): void {
-  const stmt = db.prepare(
-    "SELECT id, titulo, autor, preco, data_publicacao, editora FROM livros"
-  );
+export function listarLivros(): Livro[] {
+  const stmt = db.prepare("SELECT * FROM livros");
   const livros = stmt.all() as Livro[];
-
-  if (livros.length === 0) {
-    console.log("Nenhum livro encontrado.");
-    return;
-  }
-  console.log("\n📚 Lista de Livros:\n");
-
-  livros.forEach((livro: Livro) => {
-    console.log(`🆔 ID: ${livro.id}`);
-    console.log(`📖 Título: ${livro.titulo}`);
-    console.log(`👤 Autor: ${livro.autor}`);
-    console.log(`💰 Preço: R$${livro.preco.toFixed(2)}`);
-    console.log(`📅 Data de Publicação: ${livro.data_publicacao}`);
-    console.log(`🏢 Editora: ${livro.editora || "N/A"}`);
-    console.log("-----------------------------");
-  });
+  return livros;
 }
 
 // Buscar livro por ID
