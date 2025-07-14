@@ -44,7 +44,24 @@ function menu() {
 }
 
 function handleListar() {
-  listarLivros();
+  const livros = listarLivros();
+
+  if (livros.length === 0) {
+    console.log("Nenhum livro encontrado.");
+  } else {
+    console.log("\n📚 Lista de Livros:\n");
+
+    livros.forEach((livro) => {
+      console.log(`🆔 ID: ${livro.id}`);
+      console.log(`📖 Título: ${livro.titulo}`);
+      console.log(`👤 Autor: ${livro.autor}`);
+      console.log(`💰 Preço: R$${livro.preco.toFixed(2)}`);
+      console.log(`📅 Publicação: ${livro.data_publicacao}`);
+      console.log(`🏢 Editora: ${livro.editora || "N/A"}`);
+      console.log("---------------------------");
+    });
+  }
+
   menu();
 }
 
