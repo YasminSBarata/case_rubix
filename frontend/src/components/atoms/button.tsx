@@ -7,8 +7,9 @@ const buttonVariants = cva("flex justify-center items-center", {
   variants: {
     variant: {
       primary:
-        "px-10 py-3.5 gap-2.5 rounded-[27px] bg-redPrimary hover:bg-redSecundary active:bg-redTertiary cursor-pointer text-white font-normal text-base w-fit h-fit",
-      secondary: "flex", //caso precise
+        "px-10 font-bold py-3.5 gap-2.5 rounded-[27px] bg-redPrimary hover:bg-redSecundary active:bg-redTertiary cursor-pointer text-white  text-base w-fit h-fit hover:ease-in-out focus-visible:outline focus-visible:outline-black",
+      secondary:
+        "flex items-center justify-between text-2xl font-normal text-whiteBG cursor-pointer",
     },
   },
 });
