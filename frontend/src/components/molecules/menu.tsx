@@ -14,7 +14,7 @@ export default function Menu() {
           className="h-fit w-fit cursor-pointer text-white"
           aria-label="Botão de menu"
         >
-          <MenuIcon size={55} color="black" className="w-9 h-9" />
+          <MenuIcon size={55} className="w-9 h-9 text-whiteBG" />
         </SheetTrigger>
         <SheetContent
           className="bg-redPrimary from-redTertiary box-content rounded-s-4xl border-none bg-linear-to-b to-white/20 bg-cover px-[1.56rem] pt-[3.75rem] pb-10"
