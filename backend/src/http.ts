@@ -14,6 +14,7 @@ const app = Fastify();
 // Libera acesso do frontend
 app.register(cors, {
   origin: "http://localhost:3000",
+  methods: ["GET", "POST", "PUT", "DELETE"],
 });
 
 // Rota de teste
@@ -73,6 +74,6 @@ app.delete("/livros/:id", (request, reply) => {
 });
 
 // Inicia o servidor
-app.listen({ port: 3333 }, () => {
+app.listen({ port: Number(process.env.PORT) || 3333 }, () => {
   console.log("🚀 Servidor rodando em http://localhost:3333");
 });
