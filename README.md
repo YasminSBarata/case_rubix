@@ -114,5 +114,11 @@ O frontend estará disponível em:
 
 ## 📝 Observações finais
 
-- A interface de linha de comando (server.ts) foi mantida, mas o foco foi migrado para uma aplicação moderna com frontend visual.
+- A interface de linha de comando (server.ts) foi mantida, mas o foco foi migrado para uma aplicação moderna com frontend visual.  
+  Para rodar aplicação somente no console:
+  ```bash
+  cd backend
+  pnpm install
+  pnpm dev
+  ```
 - A aplicação pode ser facilmente estendida com testes, Docker, ou deployed na Vercel e Render.
