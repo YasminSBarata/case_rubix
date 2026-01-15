@@ -4,9 +4,11 @@ import Header from "@/components/molecules/header";
 
 export default function ListPage() {
   return (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <ListBooks />
+      <div className="pt-20">
+        <ListBooks />
+      </div>
     </div>
   );
 }
