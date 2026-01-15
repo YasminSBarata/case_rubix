@@ -205,7 +205,11 @@ export default function ListBooks() {
               <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
               <select
                 value={ordenacao}
-                onChange={(e) => setOrdenacao(e.target.value as any)}
+                onChange={(e) =>
+                  setOrdenacao(
+                    e.target.value as "recente" | "antigo" | "nome" | "preco"
+                  )
+                }
                 className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 appearance-none bg-white cursor-pointer"
               >
                 <option value="recente">Mais Recente</option>

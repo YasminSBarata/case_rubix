@@ -269,7 +269,7 @@ export default function BookRegister() {
         <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
           <p className="text-blue-800 text-sm">
             💡 <strong>Dica:</strong> Após cadastrar, você pode visualizar e
-            gerenciar todos os seus livros na página "Meus Livros".
+            gerenciar todos os seus livros na página &quot;Meus Livros&quot;.
           </p>
         </div>
       </div>

@@ -4,14 +4,6 @@ import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { Save, ArrowLeft, AlertCircle } from "lucide-react";
 
-interface Livro {
-  titulo: string;
-  autor: string;
-  preco: number;
-  data_publicacao: string;
-  editora?: string;
-}
-
 export default function BookEdit() {
   const router = useRouter();
   const { id } = useParams<{ id: string }>(); // pega o id da rota dinâmica
