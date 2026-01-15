@@ -3,9 +3,11 @@ import Header from "@/components/molecules/header";
 
 export default function NewBooks() {
   return (
-    <div className=" fle flex-col h-full">
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <BookRegister />
+      <div className="pt-20">
+        <BookRegister />
+      </div>
     </div>
   );
 }
